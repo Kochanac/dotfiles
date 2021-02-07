@@ -3,9 +3,9 @@
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
 
 	<menu id="run-menu" label="run">
-		<item label="xterm">
+		<item label="termite">
 			<action name="Execute">
-				<command>xterm -ls -xrm 'XTerm*selectToClipboard: true'</command>
+				<command>termite</command>
 			<startupnotify>
 				<enabled>yes</enabled>
 				<wmclass>xterm</wmclass>

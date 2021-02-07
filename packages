@@ -1,0 +1,14 @@
+aur/ttf-iosevka
+rofi
+sxhkd
+picom
+dunst
+
+maim
+xclip
+
+[opt] mons
+move .config/openbox/themes/whitey to /usr/share/themes
+
+
+TBD: Fonts
