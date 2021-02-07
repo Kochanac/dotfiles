@@ -1,0 +1,19 @@
+/**
+ * User: deadguy
+ * Copyright: deadguy
+ */
+
+configuration {
+  matching: "fuzzy";
+
+  show-icons:         true;
+  cycle:              false;
+  hide-scrollbar:     true;
+  disable-history:    false;
+  sidebar-mode:       false;
+  modi:               "drun,run,window";
+  display-drun:       ">";
+  display-run:        ">";
+  display-window:     ">";
+  columns: 1;
+}

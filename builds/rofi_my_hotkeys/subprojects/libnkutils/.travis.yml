@@ -1,0 +1,38 @@
+dist: trusty
+sudo: false
+
+language: c
+compiler:
+    - gcc
+    - clang
+
+addons:
+    apt:
+        packages:
+            - python3.5
+            - libglib2.0-dev
+            - uuid-dev
+            - libxkbcommon-dev
+            - gnome-icon-theme-extras
+            - gnome-icon-theme-symbolic
+            - sound-theme-freedesktop
+            - pidgin-data
+install:
+    - wget https://github.com/mesonbuild/meson/releases/download/0.47.0/meson-0.47.0.tar.gz
+    - tar xf meson-0.47.0.tar.gz
+    - export MESON=$(pwd)/meson-0.47.0/meson.py
+    - wget https://github.com/ninja-build/ninja/releases/download/v1.7.2/ninja-linux.zip
+    - unzip ninja-linux.zip
+    - export PATH=$(pwd):$PATH
+
+before_script:
+    - python3.5 ${MESON} build -Db_coverage=true
+script:
+    - ninja -C build -v test
+    - cat build/meson-logs/testlog.txt
+after_success:
+    - bash <(curl -s https://codecov.io/bash)
+
+
+notifications:
+    email: false

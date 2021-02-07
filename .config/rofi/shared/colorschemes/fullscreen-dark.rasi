@@ -1,0 +1,9 @@
+* {
+  accent:           #63c5ea;
+  background:       rgba(0, 0, 0, 0);//#373e4d;
+  window-shadow:    rgba(0, 0, 0, 0.5);
+  background-light: #3b4252;
+  background-focus: #434c5e;
+  foreground:       #f9f9f9;
+  foreground-list:  #f9f9f9;
+}

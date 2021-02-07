@@ -1,0 +1,19 @@
+#!/bin/bash
+
+## Created By Aditya Shakya
+# # -location 3 -yoffset 409 -xoffset -400 -width 15 \
+# -font "Iosevka Nerd Font 12" \
+#-hide-scrollbar \
+
+MENU="$(rofi -sep '-'\
+			-dmenu -i -p 'System' -theme '/home/kochan/.config/rofi/config.rasi' \
+			-config '/home/kochan/.config/rofi/reboot-menu.rasi' \
+			<<< "Close-Lock-Logout-Reconfigure-Reboot-Shutdown")"
+
+case "$MENU" in
+    *Lock) i3lock-fancy ;;
+    *Logout) openbox --exit ;;
+    *Reboot) systemctl reboot ;;
+    *Shutdown) systemctl -i poweroff ;;
+	*Reconfigure) openbox --reconfigure
+esac

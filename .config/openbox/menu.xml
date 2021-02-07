@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+	<menu id="run-menu" label="run">
+		<item label="xterm">
+			<action name="Execute">
+				<command>xterm -ls -xrm 'XTerm*selectToClipboard: true'</command>
+			<startupnotify>
+				<enabled>yes</enabled>
+				<wmclass>xterm</wmclass>
+			</startupnotify>
+		</action>
+	</item>
+	<separator/>
+  <item label="firefox">
+    <action name="Execute">
+      <command>firefox</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>firefox</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  <separator/> 
+  <item label="thunar">
+    <action name="Execute">
+      <command>Thunar</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <separator/>
+  <item label="keepass">
+    <action name="Execute">
+      <command>keepassxc</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <separator/>
+  <item label="gimp">
+    <action name="Execute">
+      <command>gimp</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="sys-menu" label="sys">
+  <item label="refresh">
+    <action name="Reconfigure" />
+  </item>
+  <separator/>
+  <item label="restart">
+    <action name="Execute">
+      <prompt>are you sure you want to restart?</prompt>
+      <execute>sudo shutdown -r now</execute>
+    </action>
+  </item>
+  <separator/>
+  <item label="shutdown">
+    <action name="Execute">
+      <prompt>are you sure you want to shutdown?</prompt>
+      <execute>sudo shutdown -h now</execute>
+    </action>
+  </item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+  <menu id="run-menu"/>
+  <separator/>
+  <menu id="sys-menu"/>
+  <separator />
+  <item label="exit">
+    <action name="Exit">
+      <prompt>yes</prompt>
+    </action>
+  </item>
+</menu>
+
+</openbox_menu>

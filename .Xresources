@@ -1,0 +1,56 @@
+! .Xresources
+
+! appearance
+*.internalBorder: 17
+*.scrollBar: false
+*.cursorUnderline: true
+*.cursorBlink: true
+*.geometry: 65x17
+
+! font
+urxvt.font: xft:Iosevka:style=Regular:size=13, xft:Emojione:size=13
+! urxvt.font: xft:Iosevka:style=Regular
+! rofi.font: Iosevka Nerd Font 10, Emojione 8
+! rofi.font: Emojione 20
+! urxvt.font: xft:Iosevka Medium:style=Medium
+
+*.dpi: 110
+*.autohint: 0
+*.antialias: 1
+*.hinting: 1
+*.hintstyle: hintmedium
+*.rgba: rgb
+*.lcdfilter: lcddefault
+
+! colors
+! *.foreground:   #1b1b2e
+! *.background:   #fff6f6
+! *.color0:       #1b1b2e
+! *.color8:       #c5e1e3
+! *.color1:       #889499
+! *.color9:       #f3c4c4
+! *.color2:       #cd6868
+! *.color10:      #93ba84
+! *.color3:       #48c983
+! *.color11:      #cecce2
+! *.color4:       #707a9a
+! *.color12:      #bfa4cd
+! *.color5:       #a556ad
+! *.color13:      #f3adcd
+! *.color6:       #c2649f
+! *.color14:      #87e0dc
+! *.color7:       #4ba89d
+! *.color15:      #8ba5b3
+
+! links
+*.perl-ext-common: default,matcher
+*.url-launcher: /usr/bin/xdg-open
+*.matcher.button: 1
+
+
+URxvt.perl-ext-common: selection-to-clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! URxvt.letterSpace: -7
+

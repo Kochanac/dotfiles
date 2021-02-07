@@ -1,0 +1,27 @@
+#export PATH=~/.config/scripts:$PATH
+
+G_SLICE=always-malloc tint2 &
+
+feh --bg-scale ~/pics/bg.jpg
+picom &
+
+dunst &
+#xpad
+#pulseaudio -D
+albert &
+#xinput set-prop 11 307 1 && xinput set-prop 11 309 0 && xkbset m && xkbset exp m
+
+xset -b
+xinput set-prop 11 'libinput Disable While Typing Enabled' 1
+xinput set-prop 11 "libinput Natural Scrolling Enabled" 1
+xinput set-prop 11 "libinput Tapping Enabled" 1
+#xkbset m && xkbset exp m
+xmodmap .Xmodmap
+
+sxhkd &
+
+mkdir /tmp/status
+echo level 0 > /proc/acpi/ibm/fan
+
+pkill skypeforlinux & pkill teams
+

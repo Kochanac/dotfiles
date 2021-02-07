@@ -1,0 +1,67 @@
+
+### The Hotkeys.
+
+super + l
+	slock
+
+super + Return
+	urxvt
+
+super + r
+	.config/rofi/rmenu_1
+
+control + space
+	.config/rofi/rmenu_1
+
+super + w
+	.config/rofi/networkmanager_dmenu.py
+
+super + b
+	.config/rofi/rofi-bluetooth
+
+### Screenshots
+alt + p
+	maim -s /tmp/lox.png && xclip -selection clipboard -t image/png -i /tmp/lox.png && mv /tmp/lox.png ~/screenshots/$(date +%F_%T.png) && notify-send "screenshot done"
+
+super + alt + p
+	maim /tmp/lox.png && xclip -selection clipboard -t image/png -i /tmp/lox.png && mv /tmp/lox.png ~/screenshots/$(date +%F_%T.png) && notify-send "screenshot done" 
+
+
+### x2x
+# Be aware that if your notebook XkbModel(or something?) if different, something like localization can not work
+
+super + alt + Up
+	ssh -Y pc 'notify-send "x2x connected to notebook" && x2x -to :0.0 -north || x2x -to :1.0 -north'
+
+super + alt + Down
+	ssh -Y pc 'notify-send "x2x connected to notebook" && x2x -to :0.0 -south || x2x -to :1.0 -south'
+
+super + alt + Left
+	ssh -Y pc 'notify-send "x2x connected to notebook" && x2x -to :0.0 -west || x2x -to :1.0 -west'
+
+super + alt + Right
+	ssh -Y pc 'notify-send "x2x connected to notebook" && x2x -to :0.0 -east || x2x -to :1.0 -east'
+
+super + alt + c
+	pkill -f 'ssh -Y pc'
+
+
+### Media things
+
+XF86AudioRaiseVolume
+	amixer set Master 5%+
+
+XF86AudioLowerVolume
+	amixer set Master 5%-
+
+XF86AudioMute
+	amixer set Master toggle
+
+XF86MonBrightnessUp
+	sudo brightnessctl s 5%+
+
+XF86MonBrightnessDown
+	sudo brightnessctl s 5%-
+
+
+

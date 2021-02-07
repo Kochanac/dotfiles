@@ -1,0 +1,55 @@
+/build/
+
+# autotools generated files
+/missing
+/install-sh
+/configure
+/config.status
+/config.h.in
+/config.h
+/Makefile.in
+/Makefile
+/aclocal.m4
+/autom4te.cache/
+/compile
+/depcomp
+/stamp-h1
+.dirstamp
+.deps/
+*.o
+*.gcov
+*.gcda
+*.gcno
+/test-driver
+/ar-lib
+
+# generated files
+/helper_test
+/helper_config_cmdline_parser
+/helper_expand
+/history_test
+/rofi_test
+/textbox_test
+/rofi
+/doc/*.html
+/doc/*.doxy
+/gitconfig.h
+test/output.txt
+
+# I want to ignore log files
+*.log
+
+# Core files should never be checked in
+core
+
+# ignore patches too, the code is either checked in or branch.
+*.patch*
+
+# backup files
+*.swp
+*.*~
+*.unc-backup~
+*.unc-backup.md5~
+
+# Build
+ylwrap
