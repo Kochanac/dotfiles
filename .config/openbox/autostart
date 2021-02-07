@@ -16,7 +16,7 @@ xinput set-prop 11 'libinput Disable While Typing Enabled' 1
 xinput set-prop 11 "libinput Natural Scrolling Enabled" 1
 xinput set-prop 11 "libinput Tapping Enabled" 1
 #xkbset m && xkbset exp m
-xmodmap .Xmodmap
+xmodmap .config/keyboard/mythinkpad.xmodmap
 
 sxhkd &
 

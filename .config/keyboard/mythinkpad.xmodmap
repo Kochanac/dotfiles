@@ -1,0 +1,16 @@
+
+keycode 64 = Super_L Super_L Super_L Super_L
+keycode 133 = Alt_L Alt_L Alt_L Alt_L
+keycode 107 = Super_R Super_R Super_R Super_R
+
+clear mod1
+clear mod4
+
+add mod4 = Super_L Super_R
+add mod1 = Alt_L Alt_R
+
+keycode 112 = Home Home Home Home
+keycode 117 = End End End End
+keycode 110 = Prior
+keycode 115 = Next
+
