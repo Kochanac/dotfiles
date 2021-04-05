@@ -1,4 +1,7 @@
+! stupid MLB paste gest disable
+pointer = 1 25 3 4 5 6 7 8 9
 
+! Switching left alt and left super
 keycode 64 = Super_L Super_L Super_L Super_L
 keycode 133 = Alt_L Alt_L Alt_L Alt_L
 keycode 107 = Super_R Super_R Super_R Super_R
@@ -9,17 +12,20 @@ clear mod4
 add mod4 = Super_L Super_R
 add mod1 = Alt_L Alt_R
 
+
+! Keys around arrows to be home/end
 keycode 112 = Home Home Home Home
 keycode 117 = End End End End
 keycode 110 = Prior
 keycode 115 = Next
 
-
+! Cool macbook keys
 keycode 17 = 8 asterisk 8 semicolon
 keycode 16 = 7 ampersand 7 period
 keycode 15 = 6 asciicircum 6 comma
 keycode 14 = 5 percent 5 colon
-keycode 13 = 4 dollar 4 percent
+! ?
+keycode 13 = 4 dollar 4 percent 
 
 keycode 61 = slash question slash question
 
