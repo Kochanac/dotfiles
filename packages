@@ -6,9 +6,11 @@ dunst
 
 maim
 xclip
+gsimplecal
 
 [opt] mons
 move .config/openbox/themes/whitey to /usr/share/themes
 
+REMEMBER: https://wiki.archlinux.org/index.php/XDG_user_directories
 
 TBD: Fonts

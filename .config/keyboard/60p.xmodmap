@@ -1,0 +1,16 @@
+
+keycode 135 = Alt_R Alt_R Alt_R
+
+add mod1 = Alt_R
+
+keycode 17 = 8 asterisk 8 semicolon
+keycode 16 = 7 ampersand 7 period
+keycode 15 = 6 asciicircum 6 comma
+keycode 14 = 5 percent 5 colon
+keycode 13 = 4 dollar 4 percent
+
+keycode 61 = slash question slash question
+
+
+
+
