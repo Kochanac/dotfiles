@@ -1,0 +1,81 @@
+
+super+Return
+	termite
+
+super+f
+	firefox
+
+### bspwm
+
+alt + Tab
+	bspc node -f next.local
+
+super + Escape
+	bspc node -c
+
+control + alt + {Left, Right, j, k}
+	bspc desktop -f {prev, next, prev, next}.local
+
+control + alt + shift + {Left, Right, j, k}
+	bspc node -d {prev, next, prev, next}.local --follow
+
+super + x
+	bspc node -t ~fullscreen
+
+
+super + {Left, Right, Up, Down}
+	bspc node -f {west,east,north,south}
+
+
+alt + super + {Left,Down,Up, Right}
+	.config/bspwm/bspwm_resize {west,south,north,east}
+
+#alt + ctrl {h,j,k, l}
+#	/home/whiskey/.config/bspwm/bspwm_resize {west,south,north,east}
+
+
+### Rofi
+
+super + r
+	.config/rofi/rmenu_1
+
+control + space
+	.config/rofi/rmenu_1
+
+super + w
+	.config/rofi/networkmanager_dmenu.py
+
+super + b
+	.config/rofi/rofi-bluetooth
+
+
+### Screenshots
+
+alt + p
+	maim -s /tmp/lox.png && xclip -selection clipboard -t image/png -i /tmp/lox.png && mv /tmp/lox.png ~/screenshots/$(date +%F_%T.png) && notify-send "screenshot done"
+
+super + alt + p
+	maim /tmp/lox.png && xclip -selection clipboard -t image/png -i /tmp/lox.png && mv /tmp/lox.png ~/screenshots/$(date +%F_%T.png) && notify-send "screenshot done" 
+
+
+
+
+### Media things
+
+XF86AudioRaiseVolume
+	amixer set Master 5%+
+
+XF86AudioLowerVolume
+	amixer set Master 5%-
+
+XF86AudioMute
+	amixer set Master toggle
+
+XF86MonBrightnessUp
+	brightnessctl s 5%+
+
+XF86MonBrightnessDown
+	brightnessctl s 5%-
+
+
+
